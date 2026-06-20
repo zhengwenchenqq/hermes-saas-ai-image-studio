@@ -24,7 +24,7 @@ export default function Home() {
   const [style, setStyle] = useState("realistic");
   const [size, setSize] = useState("1024x1024");
   const [loading, setLoading] = useState(false);
-  const [images, setImages] = useState([]);
+  const [images, setImages] = useState<{id:number;url:string;prompt:string}[]>([]);
   const [credits, setCredits] = useState(5);
 
   const generate = () => {
